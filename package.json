@@ -15,9 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix",
-    "prepare": "git config core.hooksPath .git-hooks || echo 'Not in a git repo'"
+    "lint": "eslint --debug src/", 
+    "lint:fix": "eslint src/ --fix" 
   },
   "eslintConfig": {
     "extends": [
