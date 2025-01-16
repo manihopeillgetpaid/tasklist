@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": false,
   "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
     "cra-template": "1.2.0",
     "date-fns": "^4.1.0",
     "prop-types": "^15.8.1",
@@ -15,8 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --debug src/", 
-    "lint:fix": "eslint src/ --fix" 
+    "lint": "eslint --debug src/",
+    "lint:fix": "eslint src/ --fix",
+    "prepare": "husky"
   },
   "eslintConfig": {
     "extends": [
@@ -36,17 +43,12 @@
       "last 1 safari version"
     ]
   },
-  "husky": { 
-    "hooks": { 
-      "pre-commit": "lint-staged" 
-    } 
-  }, 
-  "lint-staged": { 
-    "*.{js,jsx}": [ 
-      "npm run lint:fix", 
-      "npm run format" 
-    ] 
-  },
+"lint-staged": {
+  "*.{js, jsx}": [
+    "npm run lint:fix",
+    "git add"
+  ]
+},
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "author": "Bulgakova Anastasiia",
