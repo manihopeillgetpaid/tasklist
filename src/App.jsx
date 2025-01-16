@@ -123,6 +123,7 @@ onClearCompleted = () => {
       onToggleEditing={this.onToggleEditing}
  />
       <Footer toDo={todoCount} filter={filter} onFilterChange={this.onFilterChange} onClearCompleted={this.onClearCompleted}/>
+      <Footer toDo={todoCount} filter={filter} onFilterChange={this.onFilterChange} onClearCompleted={this.onClearCompleted}/>
      
       
      
