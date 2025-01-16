@@ -23,7 +23,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint --debug src/",
     "lint:fix": "eslint src/ --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "format": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -43,11 +44,11 @@
       "last 1 safari version"
     ]
   },
-"lint-staged": {
-  "*.{js,jsx}": [
-    "npm run lint:fix"
-  ]
-},
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "npm run lint:fix"
+    ]
+  },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "author": "Bulgakova Anastasiia",
@@ -58,7 +59,10 @@
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-html": "^8.1.2",
     "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^4.6.2",
     "husky": "^9.1.7",
     "lint-staged": "^15.3.0",
     "prettier": "^3.4.2"

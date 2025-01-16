@@ -1,0 +1,22 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": ["airbnb/base"],
+    "rules": {
+        "semi": "off",
+        "max-len": ["error", 160],
+        "no-plusplus": "off",
+        "no-unused-vars": "off",
+        "class-methods-use-this": "off"
+    },
+   "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false, 
+    "babelOptions": {
+      "presets": ["@babel/preset-env", "@babel/preset-react"]
+    }
+  }
+}
